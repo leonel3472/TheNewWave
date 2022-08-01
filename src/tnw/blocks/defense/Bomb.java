@@ -26,6 +26,7 @@ public class Bomb extends Block {
 	public float explodeTime = 30, explosionDamage = 10, explosionRange = 32;
 	public Effect explodeFx = Fx.none;
 	public class BombBuild extends Building {
+		float time = explodeTime;
 		public void updateTile(){
 			time -= Time.delta;
 			if(time <= 0){
