@@ -6,7 +6,7 @@
 
 ## Crediting
 
-- [creator.nightcafe.studio](https://creator.nightcafe.studio) the ai/website i used to make the [mod icon](icon.png).
+- [Nightcafe](https://creator.nightcafe.studio): The ai/website i used to make the [mod icon](icon.png).
 
 ## Modding Todo List (thanks liplum):
 
