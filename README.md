@@ -1,8 +1,8 @@
-# TheNewWave
+# The New Wave
 
 ![Mod Icon](icon.png)
 
-## Modding ToDo List:
+## Modding Todo List:
 
 - [x] Create a new Mindustry Java mod project.
 - [x] Edit the [mod.hjson](mod.hjson) for your mod.
