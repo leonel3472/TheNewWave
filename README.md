@@ -1,6 +1,6 @@
-# The New Wave
+# The New Wave ![Mod Icon](icon.png)
 
-![Mod Icon](icon.png)
+
 
 ## Modding Todo List:
 
