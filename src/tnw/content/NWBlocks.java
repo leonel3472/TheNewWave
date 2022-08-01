@@ -31,13 +31,13 @@ public class NWBlocks {
 		// wall
 		maraniumWall = new BulletWall("maranium-wall"){{
 			requirements(Category.defense, with(NWItems.maranium, 8));
-			bullet(WBullets.maraniumWallBullet);
+			bullet(NWBullets.maraniumWallBullet);
 			shots = 4;
 			scaledHealth = 105;
 		}};
 		maraniumWallLarge = new BulletWall("maranium-wall-large"){{
 			requirements(Category.defense, with(NWItems.maranium, 32));
-			bullet(WBullets.maraniumWallBullet);
+			bullet(NWBullets.maraniumWallBullet);
 			size = 2;
 			shots = 4;
 			scaledHealth = 105;
