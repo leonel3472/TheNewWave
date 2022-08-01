@@ -1,4 +1,4 @@
-package tnw.defense;
+package tnw.blocks.defense;
 
 import arc.*;
 import arc.audio.*;
