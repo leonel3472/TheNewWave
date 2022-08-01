@@ -1,5 +1,8 @@
-# The New Wave ![Mod Icon](icon.png)
+<h1 align="center">The New Wave</h1>
 
+<p align="center"><img src="icon.png" alt="Mod Icon"></p>
+
+<p></p>
 
 
 ## Modding Todo List:
@@ -9,5 +12,5 @@
 - [x] Create your first content, a block, an item or anything you want.
 - [x] Put sprites and bundles into [assets](assets) directory.
 - [x] Check the Mindustry's sources with your IDE or on its [repository](https://github.com/Anuken/Mindustry).
-- [ ] Make a beautiful [mod icon](icon.png) to replace the placeholder.
+- [x] Make a beautiful [mod icon](icon.png) to replace the placeholder.
 - [ ] Push a commit with any message containing `[release]` to generate a release draft on GitHub. 
