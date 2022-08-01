@@ -16,8 +16,7 @@ public class NWBullets {
 		}};
 		maraniumWallBullet = new BasicBulletType(6, 14){{
 			width = height = 8.5f;
-			frontColor = NWItems.maranium.color;
-			backColor = Color.valueOf("8F665B");
+			frontColor = backColor = Color.valueOf("8F665B");
 		}};
 	}
 }
