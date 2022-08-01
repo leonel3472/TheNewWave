@@ -16,28 +16,19 @@ import mindustry.world.meta.*;
   * a wall that can explode
   * @author Drifted Notes / 1237
   */
-public class Bomb extends Wall {
+public class Bomb extends Block {
 	public Bomb(String name){
 		super(name);
+		solid = destructible = sync = update = breakable = rebuildable = true;
+		scaledHealth = 100;
 	}
-
-	/** time needed to explode */
-	public float explodeTime = 240f;
-	/** the effect created when it explodes */
-	public Effect explodeFx = Fx.massiveExplosion;
-	/** the explosion damage */
-	public int explosionDamage = 5;
-	/** the explosion range (8 unit = 1 block) */
-	public int explosionRange = 128;
-
+	public float explodeTime = 30, explosionDamage = 10, explosionRange = 32;
+	public Effect explodeFx = Fx.none;
 	public class BombBuild extends Building {
-		float time = explodeTime;
-		@Override
 		public void updateTile(){
-			super.updateTile();
 			time -= Time.delta;
 			if(time <= 0){
-		 	 	Damage.damage(this.team, x, y, explosionRange, explosionDamage);
+				Damage.damage(this.team, x,y,explosionRange,explosionDamage);
 				explodeFx.at(x,y);
 				kill();
 			}
