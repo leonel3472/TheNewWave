@@ -1,4 +1,4 @@
-package tnw.content.*;
+package tnw.content;
 
 import arc.graphics.*;
 import arc.struct.Seq;
