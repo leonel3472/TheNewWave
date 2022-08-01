@@ -4,8 +4,11 @@
 
 <p></p>
 
+## Crediting
 
-## Modding Todo List:
+- [creator.nightcafe.studio](https://creator.nightcafe.studio) the ai/website i used to make the [mod icon](icon.png).
+
+## Modding Todo List (thanks liplum):
 
 - [x] Create a new Mindustry Java mod project.
 - [x] Edit the [mod.hjson](mod.hjson) for your mod.
