@@ -11,6 +11,7 @@ import mindustry.graphics.*;
 import mindustry.entities.*;
 import mindustry.world.blocks.defense.Wall;
 import mindustry.world.meta.*;
+import mindustry.world.*;
 
 /**
   * a wall that can explode
