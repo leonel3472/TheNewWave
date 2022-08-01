@@ -19,7 +19,7 @@ public class NWBlocks {
 	// start
 	start,
 	// wall
-	maraniumWall, maraniumWallLarge;
+	maraniumWall, maraniumWallLarge, bomb;
 	public static void load(){
 		// start
 		// code borrowed from project oblivion
@@ -41,6 +41,14 @@ public class NWBlocks {
 			size = 2;
 			shots = 4;
 			scaledHealth = 105;
+		}};
+		bomb = new Bomb("bomb"){{
+			// todo requirements, new item
+			requirements(Category.defense, with(NWItems.maranium, 1));
+			explosionRange = 192; // todo range
+			explosionDamage = 25;
+			explodeFx = Fx.massiveExplosion;
+			explodeTime = 30;
 		}};
 	}
 }
