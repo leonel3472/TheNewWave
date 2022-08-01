@@ -2,11 +2,7 @@
 
 <p align="center"><img src="icon.png" alt="Mod Icon"></p>
 
-<p></p>
-
-## Crediting
-
-- [Nightcafe](https://creator.nightcafe.studio): The ai/website i used to make the [mod icon](icon.png).
+<p>a sequel and a port of some of my old mindustry mods.</p>
 
 ## Modding Todo List (thanks liplum):
 
@@ -17,3 +13,7 @@
 - [x] Check the Mindustry's sources with your IDE or on its [repository](https://github.com/Anuken/Mindustry).
 - [x] Make a beautiful [mod icon](icon.png) to replace the placeholder.
 - [ ] Push a commit with any message containing `[release]` to generate a release draft on GitHub. 
+
+## Crediting
+
+- [Nightcafe](https://creator.nightcafe.studio): The ai/website i used to make the [mod icon](icon.png).
