@@ -3,10 +3,12 @@ package tnw.content;
 import mindustry.entities.bullet.*;
 import arc.graphics.*;
 
-public class WBullets {
-    public static BulletType
-	  empty,
-	  maraniumWallBullet;
+public class NWBullets {
+	public static BulletType
+	// empty bullet for placeholder
+	empty, 
+	// bullet wall bullets
+	maraniumWallBullet;
 	
 	public static void load() {
 		empty = new BasicBulletType(0,0){{
