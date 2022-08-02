@@ -37,11 +37,7 @@ public class FactoryScatter extends Block {
 
 	public void setStats(){
 		super.setStats();
-		float fr = Math.max(bullet1.speed * bullet1.lifetime, bullet2.speed * bullet2.lifetime);
-		stats.add(Stat.range, fr/8, StatUnit.blocks);
-		float fd = Math.max(bullet1.damage, bullet2.damage);
 		stats.add(Stat.shots, shots);
-		stats.add(Stat.damage, fd);
 		stats.add(Stat.reload, reload);
 		stats.add(Stat.output, StatValues.items(reload, outputItems));
 	}
