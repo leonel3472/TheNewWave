@@ -1,5 +1,6 @@
 package tnw.blocks.defense;
 
+import arc.struct.*;
 import arc.audio.Sound;
 import arc.math.Mathf;
 import arc.scene.ui.layout.Table;
@@ -32,6 +33,8 @@ public class FactoryScatter extends Block {
 	public int shootMultiplier = 1;
 	public int reload = 30;
 
+	protected Seq<BulletType> bullets = new Seq<>();
+
 	public void setStats(){
 		super.setStats();
 		float fr = Math.max(bullet1.speed * bullet1.lifetime, bullet2.speed * bullet2.lifetime);
@@ -42,6 +45,11 @@ public class FactoryScatter extends Block {
 		stats.add(Stat.reload, reload);
 		stats.add(Stat.output, StatValues.items(reload, outputItems));
 	}
+
+	public void bullets(BulletType... bulletTypes){
+		bullets.set(bulletTypes);
+	}
+
 	public class FactoryScatterBuild extends Building {
 		float cooldown = 0;
 		@Override
@@ -51,12 +59,12 @@ public class FactoryScatter extends Block {
 			}
 		}
 		public void shoot(){
-			shots*=5;
 			if(efficiency == 1 && cooldown <= 0){
 				for (int j = 1; j <= shots; j++) {
 					for(int k = 0; k < shootMultiplier;k++){
-						bullet1.create(this, x, y, j * (360f / shots) + Mathf.random(-2f, 2f));
-						bullet2.create(this, x, y, j * (360f / shots) + Mathf.random(-2f, 2f));
+						for(BulletType l : bullets){
+							l.create(this, x, y, j * (360f / shots) + Mathf.random(-2f, 2f));
+						}
 						shootSound.at(x, y, Mathf.random(-1,1));
 					}
 				}
@@ -70,6 +78,7 @@ public class FactoryScatter extends Block {
 				}
 			}
 		}
+
 		public void dumpOutputs() {
 			if (outputItems != null && timer(timerDump, dumpTime / timeScale)) {
 				for (ItemStack output : outputItems) {
