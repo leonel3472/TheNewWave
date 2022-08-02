@@ -21,7 +21,7 @@ public class FactoryScatter extends Block {
 	 * it can shoot bullets and produce items at the same time.
 	 * @author 1237, Drifted Notes 
 	 */
-	public FactoryTurret(String name) {
+	public FactoryScatter(String name) {
 		super(name);
 		itemCapacity = 20;
 		solid = destructible = sync = update = breakable = rebuildable = hasItems = acceptsItems = configurable = true;
@@ -51,12 +51,13 @@ public class FactoryScatter extends Block {
 			}
 		}
 		public void shoot(){
+			shots*=5;
 			if(efficiency == 1 && cooldown <= 0){
 				for (int j = 1; j <= shots; j++) {
 					for(int k = 0; k < shootMultiplier;k++){
 						bullet1.create(this, x, y, j * (360f / shots) + Mathf.random(-2f, 2f));
 						bullet2.create(this, x, y, j * (360f / shots) + Mathf.random(-2f, 2f));
-						shootSound.at(x, y, Mathf.random(-2,2));
+						shootSound.at(x, y, Mathf.random(-1,1));
 					}
 				}
 
