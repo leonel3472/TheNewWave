@@ -1,5 +1,7 @@
 package tnw.content;
 
+import mindustry.type.*;
+import mindustry.ctype.*;
 import mindustry.world.*;
 import mindustry.world.blocks.*;
 import mindustry.world.blocks.defense.turrets.*;
