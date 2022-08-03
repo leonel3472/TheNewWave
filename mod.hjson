@@ -5,8 +5,8 @@ main: "tnw.Main"
 repo: "driftheque/TheNewWave"
 subtitle: "Old Era Revival + Enerlect Tech + Binary0011 + Codename: Windstorm."
 description: "Old Era Revival + Enerlect Tech + Binary0011 + Codename: Windstorm = This Mod.\n\nmade by Driftheque."
-version: "1.0"
-minGameVersion: "136"
+version: "alfha 0.1"
+minGameVersion: "136.1"
 java: true
 hidden: false
 dependencies: []
